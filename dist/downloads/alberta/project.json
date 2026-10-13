@@ -1,0 +1,1102 @@
+{
+  "id": "alberta",
+  "name": "Heartland AI Campus",
+  "subtitle": "Strathcona County · 100 MW IT · phased gas-backed development",
+  "region": "Alberta, Canada",
+  "currency": "CAD",
+  "asOf": "2026-10-13",
+  "verdict": "Base economics fail the hurdle; advance only bounded diligence, no investment decision",
+  "thesis": "Develop four 25 MW liquid-cooled halls on a marketed Heartland tract, pairing 100 MW IT with 160 MW net modular gas generation and a conditional transmission connection. Sell committed powered/cooled capacity; earn the right to build each next phase through land, service, permits and tenant evidence.",
+  "executiveSummary": [
+    "A real 160-acre candidate gives the concept a testable land basis. Its AG zoning, estimated fibre and nearby transmission are unresolved development work, not proof of site readiness.",
+    "Alberta’s initial large-load allocation is fully assigned. A new project must prove a final BYOG route, acceptable net-load behavior and gas deliverability before it can promise service.",
+    "The owner develops facility and power assets; customers own GPUs and cloud revenue. All underwriting is native CAD and electricity operating costs are passed through separately from capacity rent.",
+    "The base schedule assumes first 25 MW at project month 42 and 100 MW at month 69, with each phase conditioned on contracts and approvals. No utility, landowner, vendor, lender or customer has committed.",
+    "At the current assumptions the monthly model has negative NPV at the 15% hurdle; approve only bounded diligence to test whether achievable rent, cost and delivery terms can support a revised case. No investment decision is supported."
+  ],
+  "site": {
+    "name": "Sandhills Heartland candidate — SE 23-56-21-W4",
+    "municipality": "Strathcona County",
+    "addressOrArea": "Township Road 564 and Range Road 211; legal description SE 23-56-21-W4",
+    "lat": 53.8663990960219,
+    "lon": -113.001631865825,
+    "coordinateBasis": "Exact public listing HTML map marker; an approximate location pin, not surveyed parcel boundaries.",
+    "landStatus": "Publicly marketed 160-acre tract; availability, beneficial ownership, asking price and control unconfirmed. No option, contact or access right.",
+    "areaHa": 64.75,
+    "rationale": "An identified large tract within the Sandhills Heavy Industrial Policy Area offers a concrete screening target for co-located power and four halls. Nearby transmission and industrial transport warrant diligence, while AG zoning and uncertain services prevent a readiness claim.",
+    "mapUrl": "https://www.openstreetmap.org/?mlat=53.866399&mlon=-113.001632#map=13/53.866399/-113.001632",
+    "constraints": [
+      "AG zoning at listing; industrial policy area does not confer development permission.",
+      "Nearby 240 kV line is only geographic evidence; capacity, tap rights, route and costs unknown.",
+      "Fibre ready/available flag is explicitly estimated; two routes and latency unverified.",
+      "Coronado Gas Co-op franchise proximity does not establish industrial gas deliverability.",
+      "Survey, wetlands, geotechnics, contamination, flood/industrial hazard contours and receptor setbacks unresolved.",
+      "Concept drawings use a 600 m x 800 m / 48 ha campus plus an adjoining 187.5 m x 800 m / 15 ha generation zone (787.5 m x 800 m, 63 ha gross) within a 64.75 ha tract; not a cadastral fit or buildable-area finding."
+    ],
+    "alternatives": [
+      {
+        "name": "55021 Range Road 225, Sturgeon County",
+        "reason": "Actual 73.23-acre industrial listing with I4 zoning; brochure says only roughly 20 acres remain for lease. Existing gas/power services have no proven 100 MW capacity.",
+        "decision": "Reject as base for co-located 100 MW + generation: available lease area too small without additional control. Retain only for smaller phase or off-site-power alternative."
+      },
+      {
+        "name": "Edmonton Energy and Technology Park",
+        "reason": "City describes an existing chemical-cluster route for major data-centre/utility uses; medium-industrial inclusion is a live amendment, not approved. No controlled offering identified here.",
+        "decision": "Retain as relocation alternative if a large chemical-cluster tract and utilities can be secured; do not rely on proposed zoning changes."
+      }
+    ],
+    "sourceIds": [
+      "AB01",
+      "AB06",
+      "AB13",
+      "AB14"
+    ]
+  },
+  "power": {
+    "strategy": "Conditional BYOG: 160 MW net-at-site modular gas generation paired with a transmission-connected 100 MW IT campus; prefer approved island-capable design, with grid import/export limits set only by studies and agreements.",
+    "gridVoltageKv": 240,
+    "gridRoute": "Investigate AltaLink 943L / 1054L corridor reported 1.35 km from listing; 4 x 50 MVA, 240/34.5 kV concept station. Exact connection point, circuits, redundancy and easements unselected; no right to connect.",
+    "generationRoute": "16 x 10 MW net procurement target, installed 6/9/13/16 by phase; 160 MW ultimate and 140 MW with two modules unavailable. Generation CAPEX uses cost-weighted shares of approximately 47.0486% / 15.8854% / 21.1806% / 15.8854%: all CAD55m of shared gas-lateral/BESS cost is in phase 1, with remaining CAD305m allocated by 6 / 3 / 4 / 3 added modules. Remaining BOP/civils proportional allocation is approximate; actual deposits are not modeled. Add 25 MW / 25 MWh plant BESS for dynamics and independent emergency facility supply; vendor-guaranteed site performance required.",
+    "utility": "AESO connection/system access; prospective transmission owner AltaLink based on nearby assets. Gas provider and firm upstream service unconfirmed; local franchise listing is not a supply offer.",
+    "constraints": [
+      "No share of Phase 1 allocation and no final BYOG qualification confirmed.",
+      "Generation-to-load ratio, tethering, export treatment, curtailment and bridging load require current process confirmation.",
+      "125 MW site peak envelope differs from 100 MW IT; annual PUE 1.20 is not a grid sizing guarantee.",
+      "Off-grid operation is a separate permitted/customer-approved scenario, not an automatic bypass.",
+      "All-electric grid-only alternative rejected as base for lack of allocated capacity; remote-generation PPA retained if a partner can offer an eligible, financeable route.",
+      "No merchant export, ancillary-service or heat-sale income underwritten."
+    ],
+    "sourceIds": [
+      "AB01",
+      "AB02",
+      "AB03",
+      "AB04",
+      "AB05",
+      "AB11"
+    ]
+  },
+  "cooling": {
+    "strategy": "Direct-to-chip liquid cooling with isolated facility water/glycol loops, N+1 pumping/CDUs, dry outdoor heat rejection and mechanical trim. Reserve residual room cooling for network/air-cooled loads; validate customer temperature class before equipment selection.",
+    "climateImplications": "Cold climate supports economizer operation but requires glycol isolation, freeze protection, snow/ice access, cold-start controls and smoke filtration. Annual PUE 1.20; +35 C primary / +40 C stress and -40 C winter checks are assumptions pending site weather modelling.",
+    "waterStrategy": "No routine evaporative campus or engine cooling in base. Positive domestic, maintenance, initial-fill and fire requirements remain; assume 50 m3/day service allowance and independently size fire storage. Do not claim zero water or a water licence.",
+    "sourceIds": [
+      "AB09",
+      "AB12"
+    ]
+  },
+  "permits": [
+    {
+      "name": "Site control and title diligence",
+      "authority": "Landowner; Alberta Land Titles",
+      "requirement": "Conditional option, title/caveats, easements, mineral/surface rights, survey, phase-I ESA and access rights.",
+      "sequence": "First; before irreversible design and acquisition",
+      "assumedMonths": 6,
+      "status": "Not applied; applicability and timing require confirmation",
+      "sourceIds": [
+        "AB01"
+      ]
+    },
+    {
+      "name": "County use classification, rezoning and development",
+      "authority": "Strathcona County",
+      "requirement": "Written data-centre and generation use classification; AG-to-appropriate zoning application, compatibility and development permit; subdivision only if needed.",
+      "sequence": "Months 2–18; coordinate power/noise layout",
+      "assumedMonths": 16,
+      "status": "Not applied; applicability and timing require confirmation",
+      "sourceIds": [
+        "AB01",
+        "AB06"
+      ]
+    },
+    {
+      "name": "AESO BYOG and transmission connection",
+      "authority": "AESO and applicable transmission facility owner",
+      "requirement": "Qualify against final process; submit load/generation models; connection and dynamic studies, system-access/tethering arrangements, contributions and energization conditions.",
+      "sequence": "Months 2–36 assumption; gates other commitments",
+      "assumedMonths": 35,
+      "status": "Not applied; applicability and timing require confirmation",
+      "sourceIds": [
+        "AB02",
+        "AB03",
+        "AB04",
+        "AB05"
+      ]
+    },
+    {
+      "name": "Power plant and electrical facilities approval",
+      "authority": "Alberta Utilities Commission",
+      "requirement": "Rule 007 generation/substation/line applications as applicable, participant involvement, Rule 012 noise assessment, detailed project boundary.",
+      "sequence": "Months 5–24; prior to regulated construction",
+      "assumedMonths": 20,
+      "status": "Not applied; applicability and timing require confirmation",
+      "sourceIds": [
+        "AB07",
+        "AB08"
+      ]
+    },
+    {
+      "name": "Air emissions and industrial environmental authorization",
+      "authority": "Alberta Environment and Protected Areas",
+      "requirement": "EPEA applicability and assessment determination; emissions inventory and dispersion, engine exhaust treatment, spill/waste controls and approval conditions.",
+      "sequence": "Months 4–24; parallel AUC process",
+      "assumedMonths": 21,
+      "status": "Not applied; applicability and timing require confirmation",
+      "sourceIds": [
+        "AB08",
+        "AB10"
+      ]
+    },
+    {
+      "name": "Water, wetland, stormwater and wastewater",
+      "authority": "Alberta Environment and Protected Areas; County",
+      "requirement": "Desktop/wetland field delineation; Water Act activity/diversion authorizations where required, service agreement, stormwater discharge design and fire supply.",
+      "sequence": "Months 3–20; field seasons can extend",
+      "assumedMonths": 18,
+      "status": "Not applied; applicability and timing require confirmation",
+      "sourceIds": [
+        "AB09"
+      ]
+    },
+    {
+      "name": "Indigenous consultation and participant involvement",
+      "authority": "Crown/Aboriginal Consultation Office; proponent; AUC",
+      "requirement": "Determine consultation obligations; resource early community engagement and documented response to affected interests; do not imply community consent.",
+      "sequence": "Begin month 2; complete applicable obligations before approvals",
+      "assumedMonths": 24,
+      "status": "Not applied; applicability and timing require confirmation",
+      "sourceIds": [
+        "AB07",
+        "AB08",
+        "AB09"
+      ]
+    },
+    {
+      "name": "Building, electrical, pressure systems and fire",
+      "authority": "County / accredited safety-code authorities; ABSA as applicable",
+      "requirement": "Code analysis, building and trade permits, pressure systems registration, fuel/battery fire strategy, occupancy and fire access.",
+      "sequence": "Months 14–42 block 1; repeat for later blocks",
+      "assumedMonths": 29,
+      "status": "Not applied; applicability and timing require confirmation",
+      "sourceIds": [
+        "AB06"
+      ]
+    },
+    {
+      "name": "Gas pipeline/service and highway/road access",
+      "authority": "Gas service proponent; AUC/AER as jurisdiction requires; County / Alberta Transportation",
+      "requirement": "Confirm regulator and supplier; firm gas deliverability, route/easements, metering, highway approvals and heavy-load access; do not assume co-op retail supply is adequate.",
+      "sequence": "Months 3–36; before plant commissioning",
+      "assumedMonths": 34,
+      "status": "Not applied; applicability and timing require confirmation",
+      "sourceIds": [
+        "AB01",
+        "AB07"
+      ]
+    },
+    {
+      "name": "Tax, emissions compliance and operating registrations",
+      "authority": "Alberta Treasury Board and Finance; environmental regulators",
+      "requirement": "Resolve computing-equipment levy payer and reporting; TIER benchmark and monitoring; current federal electricity rules/equivalency; operational compliance register.",
+      "sequence": "Resolve before finance close; maintain during operation",
+      "assumedMonths": 18,
+      "status": "Not applied; applicability and timing require confirmation",
+      "sourceIds": [
+        "AB10",
+        "AB15",
+        "AB16"
+      ]
+    }
+  ],
+  "delivery": [
+    {
+      "name": "Screen and conditional land option",
+      "startMonth": 1,
+      "endMonth": 6,
+      "dependency": "Landowner willingness, title and desktop fatal-flaw pass",
+      "output": "Controlable site with exit rights; survey and constraint map",
+      "status": "Proposed conditional schedule"
+    },
+    {
+      "name": "Gas / fibre / water feasibility and customer design brief",
+      "startMonth": 2,
+      "endMonth": 8,
+      "dependency": "Permission for investigations and requested capacity definition",
+      "output": "Written provider scope, route plans and tenant interface requirements",
+      "status": "Proposed conditional schedule"
+    },
+    {
+      "name": "County rezoning, environmental fieldwork and engagement",
+      "startMonth": 2,
+      "endMonth": 18,
+      "dependency": "Site options and preliminary layout",
+      "output": "Applicable land-use consent and technically complete applications",
+      "status": "Proposed conditional schedule"
+    },
+    {
+      "name": "BYOG qualification, AESO / TFO studies and agreements",
+      "startMonth": 2,
+      "endMonth": 36,
+      "dependency": "Final published process and eligible paired generation",
+      "output": "Study-approved connection, cost and operating envelope; no guaranteed completion month",
+      "status": "Proposed conditional schedule"
+    },
+    {
+      "name": "Plant air/noise and AUC authorization",
+      "startMonth": 5,
+      "endMonth": 24,
+      "dependency": "OEM emissions assumptions and viable receptors study",
+      "output": "Approved plant and associated facilities with conditions",
+      "status": "Proposed conditional schedule"
+    },
+    {
+      "name": "Anchor lease, EPC scope and financing gate",
+      "startMonth": 6,
+      "endMonth": 14,
+      "dependency": "Site/power feasibility and credible total cost",
+      "output": "Conditional 25 MW lease; FID only when finance conditions precedent met",
+      "status": "Proposed conditional schedule"
+    },
+    {
+      "name": "Long-lead equipment engineering and manufacture",
+      "startMonth": 8,
+      "endMonth": 38,
+      "dependency": "Equity-funded conditional reservations / limited notices at M8; permit and cancellation exposure expressly approved; full releases only after relevant gates",
+      "output": "Transformers, engines, MV switchgear, UPS and cooling assemblies",
+      "status": "Proposed conditional schedule"
+    },
+    {
+      "name": "Shared infrastructure and block 1 civil / shell",
+      "startMonth": 20,
+      "endMonth": 34,
+      "dependency": "Issued approvals, civil design and finance close",
+      "output": "Roads, drainage, utility yards and first 25 MW shell",
+      "status": "Proposed conditional schedule"
+    },
+    {
+      "name": "Block 1 fit-out, 60 MW gas stage and commissioning",
+      "startMonth": 30,
+      "endMonth": 42,
+      "dependency": "Equipment delivery, gas and grid commissioning authorizations",
+      "output": "25 MW IT accepted; islanding, thermal and protection tests passed",
+      "status": "Proposed conditional schedule"
+    },
+    {
+      "name": "Block 2 and 90 MW cumulative gas capacity",
+      "startMonth": 36,
+      "endMonth": 51,
+      "dependency": "Additional 25 MW contracted; adequate service and finance",
+      "output": "50 MW IT cumulative acceptance",
+      "status": "Proposed conditional schedule"
+    },
+    {
+      "name": "Block 3 and 130 MW cumulative gas capacity",
+      "startMonth": 45,
+      "endMonth": 60,
+      "dependency": "Additional 25 MW contracted; operating lessons incorporated",
+      "output": "75 MW IT cumulative acceptance",
+      "status": "Proposed conditional schedule"
+    },
+    {
+      "name": "Block 4 and 160 MW cumulative gas capacity",
+      "startMonth": 54,
+      "endMonth": 69,
+      "dependency": "Final 25 MW contracted; service and funding gates",
+      "output": "100 MW IT cumulative acceptance",
+      "status": "Proposed conditional schedule"
+    }
+  ],
+  "procurement": [
+    {
+      "package": "240 kV receiving and protection",
+      "specification": "Four 50 MVA 240/34.5 kV transformers (3 duty + 1 spare), segregated buses, protection/SCADA/PMU; receiving equipment is in facility electrical CAPEX, off-plot route/contribution scope is separate",
+      "quantity": "1 campus station / 4 transformers",
+      "leadMonths": 30,
+      "status": "Budgetary procurement concept; no RFQ, order or slot",
+      "sourceIds": [
+        "AB01",
+        "AB04"
+      ]
+    },
+    {
+      "package": "Modular gas plant",
+      "specification": "16 modules with 10 MW guaranteed NET at site each; N+2 screening, emissions abatement, heat-rate and starts guarantees, LTSA",
+      "quantity": "6 / 9 / 13 / 16 cumulative modules",
+      "leadMonths": 30,
+      "status": "Budgetary procurement concept; no RFQ, order or slot",
+      "sourceIds": [
+        "AB11"
+      ]
+    },
+    {
+      "package": "Gas lateral and metering",
+      "specification": "Firm maximum-day delivery around 0.8 million standard m3/day; pressure/composition, redundancy and interruption study",
+      "quantity": "1 route plus redundant regulation; source diversity unresolved",
+      "leadMonths": 24,
+      "status": "Budgetary procurement concept; no RFQ, order or slot",
+      "sourceIds": [
+        "AB01"
+      ]
+    },
+    {
+      "package": "BESS and microgrid controls",
+      "specification": "25 MW / 25 MWh conceptual buffer, grid-forming function if required; dynamic sizing, black-start sequence and cyber/fire integration",
+      "quantity": "1 modular plant with sectional isolation",
+      "leadMonths": 18,
+      "status": "Budgetary procurement concept; no RFQ, order or slot",
+      "sourceIds": [
+        "AB04"
+      ]
+    },
+    {
+      "package": "Buildings and civil",
+      "specification": "Four 25 MW halls; screening 180 m x 120 m each with service galleries; drainage, access, fire separation and industrial hazard study",
+      "quantity": "4 halls; approximately 86,400 m2 shell footprint",
+      "leadMonths": 18,
+      "status": "Budgetary procurement concept; no RFQ, order or slot",
+      "sourceIds": []
+    },
+    {
+      "package": "Facility MV/LV, UPS and standby",
+      "specification": "Dual maintenance paths to IT, modular N+1 UPS and mechanically backed cooling; independent emergency supply sized against peak block load",
+      "quantity": "4 independently testable 25 MW blocks",
+      "leadMonths": 20,
+      "status": "Budgetary procurement concept; no RFQ, order or slot",
+      "sourceIds": [
+        "AB04"
+      ]
+    },
+    {
+      "package": "Liquid cooling and dry rejection",
+      "specification": "Customer temperature-class CDUs, redundant pumps, isolated water/glycol loops, dry coolers plus mechanical trim; winterization",
+      "quantity": "4 x 25 MW IT trains, 125 MW aggregate campus heat-rejection envelope, 90 MW liquid and 10 MW residual IT air cooling, plus separate engine cooling",
+      "leadMonths": 18,
+      "status": "Budgetary procurement concept; no RFQ, order or slot",
+      "sourceIds": []
+    },
+    {
+      "package": "Diverse fibre entrances",
+      "specification": "Two carriers, physically diverse ducts/meet-me rooms, route drawings including common bridges/rail crossings",
+      "quantity": "2 verified end-to-end routes",
+      "leadMonths": 15,
+      "status": "Budgetary procurement concept; no RFQ, order or slot",
+      "sourceIds": [
+        "AB01"
+      ]
+    },
+    {
+      "package": "Commissioning and acceptance",
+      "specification": "Independent agent; factory witness, protection tests, load-bank thermal tests, failure-mode and integrated island/grid transitions",
+      "quantity": "4 phase acceptance campaigns",
+      "leadMonths": 9,
+      "status": "Budgetary procurement concept; no RFQ, order or slot",
+      "sourceIds": [
+        "AB04"
+      ]
+    }
+  ],
+  "commercial": {
+    "customer": "One creditworthy Canadian or international AI/cloud operator taking the initial 25 MW, with later 25 MW blocks reserved under separately funded expansion rights; no prospect is named or represented as interested.",
+    "offering": "Wholesale dedicated powered/cooled IT capacity in 5 MW suites within 25 MW buildings; customer procures/runs GPUs, network and software. Landlord provides facility, utility interface, cooling, security and operations.",
+    "contracting": "Target 10–15 year take-or-pay lease with capacity rent, annual indexation, metered power operating-cost pass-through, reserved capacity charges, explicit carbon/tax allocation, technical interface schedule, agreed curtailment envelope, commissioning acceptance, service credits and capped delay liabilities. Credit support via parent guarantee or LC. No SLA promising grid independence until proven. The 20-year model includes a 5-year initial-phase tail beyond a 15-year lease (longer beyond 10 years), with no renewal discount or downtime; renewal/reletting is uncontracted risk, not committed revenue.",
+    "financing": "Single sponsor holding facility and generation SPVs with enforceable service, easement and intercreditor arrangements; consolidated model includes generation CAPEX so transfer pricing cannot create artificial returns. Target 55% senior debt at 7.5%, 20-year amortization; equity funds early diligence and contingent commitments. No subsidies, tax-credit proceeds, GPU sales or merchant exports in base.",
+    "goToMarket": [
+      "Prepare a technical data room with constraint map, three power cases and the full cost boundary.",
+      "Qualify anchor credit and Canadian data-residency needs; test willingness to accept gas emissions and AESO curtailment terms.",
+      "Obtain conditional 25 MW lease and price later blocks as options with paid reservation deadlines.",
+      "Seek generation/EPC and institutional infrastructure partners against the defined risk allocation.",
+      "Release later phases only when booked capacity, funding, service and commissioning evidence support them."
+    ],
+    "counterpartyQuestions": [
+      "Will an anchor sign CAD235/kW-month plus metered energy, with credit support and a credible delivery range?",
+      "What inlet temperatures, peak load steps, density, power-quality ride-through and maintenance windows must be guaranteed?",
+      "Which party is legally liable for the 2026 computing-equipment levy, and can the lease recover it without relying on tax-credit realization?",
+      "Will AESO accept the paired generator configuration, net import limit, dynamic behavior and phase sequence?",
+      "Can firm gas supply survive cold-day pressure and upstream outages, and who pays for dedicated infrastructure?",
+      "Will lenders finance co-located generation and tenant lease together at the modeled leverage and tenor?"
+    ]
+  },
+  "risks": [
+    {
+      "risk": "No viable BYOG allocation / grid operating envelope",
+      "impact": "No financeable service date or unacceptable forced curtailment",
+      "mitigation": "Keep conditional land option; design net-load controls and paired generation; underwrite no bridging-load entitlement",
+      "trigger": "No written viable route by M12, or latest credible first service beyond M54",
+      "owner": "Power development lead",
+      "sourceIds": [
+        "AB02",
+        "AB03",
+        "AB04"
+      ]
+    },
+    {
+      "risk": "Candidate cannot be controlled or rezoned",
+      "impact": "Entire location thesis fails",
+      "mitigation": "Title/owner check before FEED; preserve two screened alternatives; obtain written use classification",
+      "trigger": "No option by M6 or authority identifies incompatible land use",
+      "owner": "Development director",
+      "sourceIds": [
+        "AB01",
+        "AB06"
+      ]
+    },
+    {
+      "risk": "Gas pressure or firm transport inadequate",
+      "impact": "Plant capacity unavailable during stressed conditions",
+      "mitigation": "Firm gas study; upstream hydraulic model; independent emergency fuel; contract interruption compensation",
+      "trigger": "Cannot reserve approximate 0.8 million m3/day peak or identify common-mode outages",
+      "owner": "Generation lead",
+      "sourceIds": [
+        "AB01",
+        "AB11"
+      ]
+    },
+    {
+      "risk": "Air, noise, ecological or industrial-neighbour risk",
+      "impact": "Approval refused, costly mitigation, insurance exclusions",
+      "mitigation": "Noise/dispersion/hazard contours before fixed layout; dry rejection, enclosed engines, setbacks and fire plan",
+      "trigger": "Unmitigable boundary/receptor exceedance or insufficient developable area",
+      "owner": "Environmental lead",
+      "sourceIds": [
+        "AB07",
+        "AB08",
+        "AB09"
+      ]
+    },
+    {
+      "risk": "Single gas source + grid outage common mode",
+      "impact": "Campus interruption despite nominal N+2 engines",
+      "mitigation": "Independent emergency supply and UPS; prove gas/grid independence and black-start transitions",
+      "trigger": "Customer cannot accept residual common-mode risk or alternate-fuel design cannot be permitted",
+      "owner": "Electrical reliability lead",
+      "sourceIds": [
+        "AB04"
+      ]
+    },
+    {
+      "risk": "Cost escalation / equipment delivery slots",
+      "impact": "Rent no longer supports capital and schedule",
+      "mitigation": "Gated orders, open-book bids, CAD exposure control and liquidated-damages matrix",
+      "trigger": "P90-style stress case cannot meet 15% equity hurdle at obtainable rent; no binding OEM slot",
+      "owner": "Commercial director",
+      "sourceIds": []
+    },
+    {
+      "risk": "No bankable anchor customer",
+      "impact": "Speculative $2bn+ infrastructure without debt support",
+      "mitigation": "25 MW take-or-pay with credit security; later phases only against signed expansion commitments",
+      "trigger": "No bankable first-block lease by M12; no credit-supported ramp schedule",
+      "owner": "Leasing lead",
+      "sourceIds": []
+    },
+    {
+      "risk": "Carbon / equipment levy / regulatory changes",
+      "impact": "Customer economics and long-lived gas value deteriorate",
+      "mitigation": "Explicit tax allocation, carbon pass-through, low-carbon replacement option and current counsel opinion; no assumed permanent exemption",
+      "trigger": "Customer rejects gas emissions or counsel cannot support finance-term operating pathway",
+      "owner": "Legal and sustainability lead",
+      "sourceIds": [
+        "AB10",
+        "AB15",
+        "AB16"
+      ]
+    },
+    {
+      "risk": "Fibre availability is estimated, routes share failure points",
+      "impact": "Latency or availability SLA cannot be met",
+      "mitigation": "Carrier route disclosure, latency measurements and easement mapping before FID",
+      "trigger": "No two acceptable end-to-end routes and upgrade cost/timeline exceeds budget",
+      "owner": "Connectivity lead",
+      "sourceIds": [
+        "AB01"
+      ]
+    },
+    {
+      "risk": "Cold weather, smoke or design-day heat",
+      "impact": "Cooling capacity loss, frozen pipework, filters overloaded",
+      "mitigation": "Outdoor glycol separation, bypass/winter start controls, dry/trim heat rejection and spare filters; simulate hourly",
+      "trigger": "Guaranteed 25 MW block capacity unavailable at agreed outdoor envelope",
+      "owner": "Mechanical lead",
+      "sourceIds": [
+        "AB12"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "name": "G0: controllable land",
+      "proof": "Executed conditional option, clean title review, surveyed boundaries and developable-area test",
+      "owner": "Development director",
+      "status": "Open; no external commitment"
+    },
+    {
+      "name": "G1: credible power and fuel",
+      "proof": "Written AESO/TFO route and cost envelope, acceptable final BYOG qualification and firm gas feasibility",
+      "owner": "Power development lead",
+      "status": "Open; no external commitment"
+    },
+    {
+      "name": "G2: consentable layout",
+      "proof": "County use confirmation plus noise/air/wetland/hazard evidence with no fatal flaw",
+      "owner": "Planning and environmental lead",
+      "status": "Open; no external commitment"
+    },
+    {
+      "name": "G3: bankable first phase",
+      "proof": "Credit-approved lease for initial 25 MW, remaining-power capital allocation and lenders term sheet",
+      "owner": "Commercial director",
+      "status": "Open; no external commitment"
+    },
+    {
+      "name": "G4: investment decision",
+      "proof": "Required approvals, funded contingency/cancellation exposure, executable EPC/LTSA scope and financing commitments",
+      "owner": "Investment committee",
+      "status": "Open; no external commitment"
+    },
+    {
+      "name": "G5: ready for service",
+      "proof": "Witnessed integrated tests, compliance permissions, trained operators and customer acceptance",
+      "owner": "Independent commissioning authority",
+      "status": "Open; no external commitment"
+    }
+  ],
+  "sources": [
+    {
+      "id": "AB01",
+      "title": "160 acres: Township Road 564 and Range Road 211",
+      "url": "https://regionaldashboard.alberta.ca/property/201504",
+      "publisher": "Government of Alberta Regional Dashboard",
+      "published": "Undated live listing",
+      "accessed": "2026-10-13",
+      "claim": "Listing identifies SE 23-56-21-W4, 160 acres, AG zoning and Sandhills Heavy Industrial Policy Area; reports a 240 kV AltaLink line 1.35 km away and estimated fibre availability. HTML map marker is 53.8663990960219, -113.001631865825.",
+      "limitation": "Listing is evidence of a marketed candidate, not current availability, ownership, a survey, utility capacity or connection rights. Distances are straight-line estimates."
+    },
+    {
+      "id": "AB02",
+      "title": "Large Load Projects",
+      "url": "https://www.aeso.ca/grid/connecting-to-the-grid/large-load-projects/",
+      "publisher": "AESO",
+      "published": "Live page; guide posted 2026-06-12",
+      "accessed": "2026-10-13",
+      "claim": "Phase 1 has allocated all 1,200 MW: GLDC 970 MW and Keephills Phase I 230 MW; other applications enter Phase 2.",
+      "limitation": "No capacity allocated to this proposal; named projects are unrelated third parties."
+    },
+    {
+      "id": "AB03",
+      "title": "Phase 2A Large Load Integration: BYOG Process",
+      "url": "https://aesoengage.aeso.ca/pre-engagement-phase-ii-large-load-integration",
+      "publisher": "AESO",
+      "published": "2026-09-08 latest dated stakeholder update inspected",
+      "accessed": "2026-10-13",
+      "claim": "September update says final BYOG process and materials are still being finalized and intake is expected in fall; earlier draft outcomes are explicitly not final.",
+      "limitation": "This is the published page state inspected, not confirmation intake remains closed on every other AESO channel. Final ratios, qualifying generation, tethering and milestones need confirmation."
+    },
+    {
+      "id": "AB04",
+      "title": "Guide to AESO Connection Requirements for Transmission-Connected Data Centres",
+      "url": "https://www.aeso.ca/assets/Uploads/grid/Guide-to-AESO-Connection-Requirements-for-Transmission-Connected-Data-Centres.pdf",
+      "publisher": "AESO",
+      "published": "2026-06-12",
+      "accessed": "2026-10-13",
+      "claim": "Guide covers load dynamics, protection, backup synchronization, operational coordination and possible 10 MW/min point-of-connection ramp limits; its examples are illustrative.",
+      "limitation": "Project requirements emerge from studies and binding agreements. This proposal has no validated dynamic model or approved ramp envelope."
+    },
+    {
+      "id": "AB05",
+      "title": "Powering new pathways for data centres",
+      "url": "https://www.alberta.ca/powering-new-pathways-for-data-centres",
+      "publisher": "Government of Alberta",
+      "published": "Royal assent 2025-12-11",
+      "accessed": "2026-10-13",
+      "claim": "Bill 8 framework encourages own generation and cost-causation for transmission upgrades.",
+      "limitation": "Policy direction does not establish approved project service, final tariff or an energization date."
+    },
+    {
+      "id": "AB06",
+      "title": "Strathcona land use bylaw: zones and maps",
+      "url": "https://www.strathcona.ca/council-county/bylaws-and-policies/land-use-bylaw/interactive-lub/part-1-interpretation/zones-and-maps/",
+      "publisher": "Strathcona County",
+      "published": "Live consolidated page",
+      "accessed": "2026-10-13",
+      "claim": "County distinguishes AG, Heavy Industrial Heartland (IHH), Medium Industrial Heartland (IMH), utilities and overlays; mapped zoning governs.",
+      "limitation": "Does not determine a data-centre/generation use classification or rezone the candidate. Seek written interpretation and current parcel zoning certificate."
+    },
+    {
+      "id": "AB07",
+      "title": "Rule 007: Facility Applications",
+      "url": "https://www.auc.ab.ca/rules/rule007/",
+      "publisher": "Alberta Utilities Commission",
+      "published": "Effective 2025-11-06",
+      "accessed": "2026-10-13",
+      "claim": "Current AUC facility application rule and forms cover thermal generation, transmission and substations.",
+      "limitation": "Timing and hearing requirements are case-specific; none of this proposal has been filed."
+    },
+    {
+      "id": "AB08",
+      "title": "Proposing a power plant application",
+      "url": "https://www.auc.ab.ca/proposing-a-power-plant-application/",
+      "publisher": "Alberta Utilities Commission",
+      "published": "Live guidance",
+      "accessed": "2026-10-13",
+      "claim": "AUC guidance addresses facility applications, affected persons, Rule 012 noise and separate EPEA requirements for thermal plants above 1 MW.",
+      "limitation": "General guidance; exact industrial, generation, pipeline and environmental approval boundaries require regulator and counsel confirmation."
+    },
+    {
+      "id": "AB09",
+      "title": "Water legislation and guidelines",
+      "url": "https://www.alberta.ca/water-legislation-and-guidelines",
+      "publisher": "Government of Alberta",
+      "published": "Live guidance",
+      "accessed": "2026-10-13",
+      "claim": "Water Act/EPEA framework includes diversion licences, activity approvals, wetlands, wastewater and stormwater guidance.",
+      "limitation": "Dry cooling does not exempt site drainage, wetland disturbance, construction water or domestic supply from applicable requirements."
+    },
+    {
+      "id": "AB10",
+      "title": "Technology Innovation and Emissions Reduction Regulation",
+      "url": "https://www.alberta.ca/technology-innovation-and-emissions-reduction-regulation",
+      "publisher": "Government of Alberta",
+      "published": "Includes December 2025 amendments",
+      "accessed": "2026-10-13",
+      "claim": "TIER generally covers facilities emitting at least 100,000 tonnes CO2e per year; compliance is benchmark-based, not simply gross emissions times a headline tax.",
+      "limitation": "Plant-specific treatment, benchmark, credits and compliance prices are unresolved; no assumed exemption or incentive."
+    },
+    {
+      "id": "AB11",
+      "title": "Wartsila 31SG gas engine product technical data",
+      "url": "https://www.wartsila.com/energy/engine-power-plant-solutions/engine-power-plant-products/wartsila-31sg-gas-engine",
+      "publisher": "Wartsila Energy",
+      "published": "Live product page",
+      "accessed": "2026-10-13",
+      "claim": "Manufacturer publishes 60 Hz units around 10.4–12.4 MW and heat rates around 6.9–7.1 GJ/MWh at specified reference conditions.",
+      "limitation": "A technology reference, not a selected supplier, quote, delivery slot or site guarantee; auxiliaries, climate, emissions and fuel change net output."
+    },
+    {
+      "id": "AB12",
+      "title": "Canadian Climate Normals 1991–2020",
+      "url": "https://www.climate.weather.gc.ca/climate_normals/index_e.html",
+      "publisher": "Environment and Climate Change Canada",
+      "published": "1991–2020 dataset",
+      "accessed": "2026-10-13",
+      "claim": "Official normals use composite stations with at least 15 years of observations; appropriate starting point for an hourly site weather study.",
+      "limitation": "No hourly simulation or site design extremes extracted here. All design temperatures and PUE values in this proposal are assumptions, not values attributed to this page."
+    },
+    {
+      "id": "AB13",
+      "title": "Sturgeon County Industrial Land: 55021 Range Road 225",
+      "url": "https://royalparkrealty.com/wp-content/uploads/2024/10/Sturgeon-County-Industrial-Land_2025.pdf",
+      "publisher": "Royal Park Realty",
+      "published": "2025 brochure",
+      "accessed": "2026-10-13",
+      "claim": "Broker advertises 73.23-acre industrial site with only about 20 acres remaining for lease and I4 zoning.",
+      "limitation": "First-party marketing can be stale; service capacity is unstated and no owner contact occurred."
+    },
+    {
+      "id": "AB14",
+      "title": "LDA26-0225: Edmonton Energy and Technology Park AI Data Centre Amendment",
+      "url": "https://engaged.edmonton.ca/eetpdatacentre",
+      "publisher": "City of Edmonton",
+      "published": "2026 live application consultation",
+      "accessed": "2026-10-13",
+      "claim": "City describes large AI data centres as allowed in the chemical-cluster zone but currently not allowed in the medium-industrial zone; an amendment is under consideration.",
+      "limitation": "An application is not an approval. No specific available EETP parcel is secured or represented by this proposal."
+    },
+    {
+      "id": "AB15",
+      "title": "Alberta tax overview: data centre levy",
+      "url": "https://www.alberta.ca/taxes-levies-overview",
+      "publisher": "Government of Alberta, Treasury Board and Finance",
+      "published": "Effective 2026-01-01 per live page",
+      "accessed": "2026-10-13",
+      "claim": "Provincial overview says equipment levy effective January 1, 2026, up to 2%, with lower rates for projects supplying their own power and corporate-tax treatment.",
+      "limitation": "Facility SPV versus tenant liability, rate formula and tax-credit realization need tax counsel. Exclusion of GPU CAPEX from this model is not a levy exemption."
+    },
+    {
+      "id": "AB16",
+      "title": "Canada–Alberta Implementation Agreement",
+      "url": "https://www.pm.gc.ca/en/news/backgrounders/2026/05/15/implementation-agreement-canada-alberta-memorandum-understanding",
+      "publisher": "Prime Minister of Canada",
+      "published": "2026-05-15",
+      "accessed": "2026-10-13",
+      "claim": "Agreement conditionally holds Clean Electricity Regulations in abeyance while the reference and possible appeals proceed; contemplates subsequent equivalency negotiations if upheld.",
+      "limitation": "Does not guarantee permanent exemption or a 20-year plant operating entitlement. Read with current legislation, litigation and project-specific advice."
+    },
+    {
+      "id": "AB17",
+      "title": "2026 Strathcona County tax rates",
+      "url": "https://www.strathcona.ca/your-property-utilities/property-taxes/tax-payment/tax-rates/",
+      "publisher": "Strathcona County",
+      "published": "Approved 2026-04-28",
+      "accessed": "2026-10-13",
+      "claim": "2026 non-residential rate 15.0823 mills and machinery/equipment 11.0960 mills, with designated industrial requisition listed separately.",
+      "limitation": "Assessment class and taxable values for this unbuilt project are unknown; no exemption or tax incentive assumed."
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "it",
+      "label": "Ultimate IT capacity",
+      "value": 100,
+      "unit": "MW",
+      "basis": "Four independently commissioned 25 MW blocks; tenant hardware excluded.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "area",
+      "label": "Candidate tract",
+      "value": 64.75,
+      "unit": "ha",
+      "basis": "160 acres converted to hectares; survey/developable area unverified.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": [
+        "AB01"
+      ]
+    },
+    {
+      "id": "rack",
+      "label": "Nominal rack density",
+      "value": 100,
+      "unit": "kW/rack",
+      "basis": "1,000 equivalent racks at full IT; actual mix controlled by customer interface schedule.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "pue",
+      "label": "Annual design PUE",
+      "value": 1.2,
+      "unit": "ratio",
+      "basis": "Planning target for dry liquid-cooled Alberta campus at operating load; hourly model required.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": [
+        "AB12"
+      ]
+    },
+    {
+      "id": "peakpue",
+      "label": "Peak facility multiplier",
+      "value": 1.25,
+      "unit": "ratio",
+      "basis": "125 MW peak facility envelope; includes heat-wave and auxiliary allowance, separately from annual PUE.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "gen",
+      "label": "Gas generation net at site",
+      "value": 160,
+      "unit": "MW",
+      "basis": "16 x 10 MW procurement targets; 140 MW with two units unavailable, conditional on vendor guarantees.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": [
+        "AB11"
+      ]
+    },
+    {
+      "id": "heat",
+      "label": "Net generation heat rate",
+      "value": 7.6,
+      "unit": "GJ/MWh",
+      "basis": "Conservative planning allowance above manufacturer reference gross heat rates; 47.4% net LHV efficiency.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": [
+        "AB11"
+      ]
+    },
+    {
+      "id": "gasprice",
+      "label": "Delivered gas price",
+      "value": 5.5,
+      "unit": "CAD/GJ",
+      "basis": "Independent scenario allowance; no AECO strip or transport quote represented.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "fuelpeak",
+      "label": "Gas delivery reservation",
+      "value": 0.8,
+      "unit": "million standard m3/day",
+      "basis": "Approximate peak reservation at 160 MW and 7.6 GJ/MWh using 38 MJ/m3; specification requires actual gas assay.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "bess",
+      "label": "Ramp / island support BESS",
+      "value": 25,
+      "unit": "MW and MWh",
+      "basis": "25 MW / 25 MWh plant-side concept; does not replace full-campus UPS or stand-alone reliability study.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "energy",
+      "label": "Delivered operating energy allowance",
+      "value": 120,
+      "unit": "CAD/MWh",
+      "basis": "Fuel 41.8 + plant variable service 17 + emissions reserve 25 + residual grid/transport balancing 21.2 + operations reserve 15 = 120; capital recovery is in rent, not here.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": [
+        "AB10",
+        "AB11"
+      ]
+    },
+    {
+      "id": "facility",
+      "label": "Facility hard cost",
+      "value": 13500,
+      "unit": "CAD/kW IT",
+      "basis": "Independent total screening allowance allocated as shell/fit-out 2430, electrical/UPS/standby 5400, cooling/CDUs 2970, civil/drainage 1350, controls/security/fibre 675, testing/commissioning 675; excludes land/grid/gas plant/soft/contingency.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "land",
+      "label": "Land acquisition allowance",
+      "value": 8,
+      "unit": "CAD million",
+      "basis": "About CAD50,000/acre for marketed tract, placeholder; not asking price or appraisal.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "grid",
+      "label": "Grid interface allowance",
+      "value": 75,
+      "unit": "CAD million",
+      "basis": "Off-plot line/routing, easements, grid reinforcement contribution, utility studies and interface works only; receiving station is included in facility electrical CAPEX; no utility estimate.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": [
+        "AB01",
+        "AB04"
+      ]
+    },
+    {
+      "id": "plant",
+      "label": "Gas plant and BESS allowance",
+      "value": 360,
+      "unit": "CAD million",
+      "basis": "CAD2,250/kW of 160 MW net: engine packages 175m, generation BOP 85m, gas lateral 25m, BESS 30m, dedicated civils/electrical 45m. Shared lateral+BESS 55m is fully phase 1; remaining 305m allocated by incremental 6/3/4/3 engines. Proportional BOP/civils is approximate; deposits not modeled; no vendor bids.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "soft",
+      "label": "Soft costs",
+      "value": 10,
+      "unit": "percent of direct cost",
+      "basis": "Engineering, owner development, permitting, legal, management; financing costs follow model convention separately.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "contingency",
+      "label": "Contingency",
+      "value": 15,
+      "unit": "percent of hard plus soft cost",
+      "basis": "Screening reserve; scenarios need -20/+35 percent total cost swing, not a confidence interval.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "opexfixed",
+      "label": "Fixed non-energy OPEX",
+      "value": 35,
+      "unit": "CAD million/year at ultimate campus",
+      "basis": "Facility/plant staffing 8m, property tax 18m, insurance 4m, fixed plant service 2m, security/admin 3m. Tax allowance approximates 900m non-residential and 400m M&E assessment at published 2026 rates; assessments and premiums unconfirmed.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": [
+        "AB17"
+      ]
+    },
+    {
+      "id": "opexvar",
+      "label": "Variable non-energy OPEX",
+      "value": 180,
+      "unit": "CAD/kW committed/year",
+      "basis": "Facility maintenance, spares, consumables; excludes gas-plant variable service embedded in energy allowance.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "lease",
+      "label": "Capacity rent",
+      "value": 235,
+      "unit": "CAD/kW committed/month",
+      "basis": "Target underwriting assumption for powered/cooled wholesale facility with generation capital; not a signed rent or market quote.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "occ",
+      "label": "Stabilized committed capacity",
+      "value": 95,
+      "unit": "percent",
+      "basis": "Economic occupancy assumption; unleased capacity is not billed.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "load",
+      "label": "Load on committed IT",
+      "value": 80,
+      "unit": "percent",
+      "basis": "Tenant metered demand assumption; separated from rent-bearing committed capacity.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "debt",
+      "label": "Senior debt share",
+      "value": 55,
+      "unit": "percent",
+      "basis": "Target only; contingent on bankable leases, permits, completion support and DSCR.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "interest",
+      "label": "Debt interest",
+      "value": 7.5,
+      "unit": "percent annual",
+      "basis": "Illustrative CAD borrowing cost; no lender indication.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "debtterm",
+      "label": "Debt amortization",
+      "value": 20,
+      "unit": "years",
+      "basis": "Illustrative term; refinance and maturity structure must be negotiated.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "discount",
+      "label": "Equity hurdle",
+      "value": 15,
+      "unit": "percent",
+      "basis": "Developer screening hurdle, not investor commitment.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "cod",
+      "label": "First block operation",
+      "value": 42,
+      "unit": "project month",
+      "basis": "Conditional development scenario; no asserted AESO energization date.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "interval",
+      "label": "Phase interval",
+      "value": 9,
+      "unit": "months",
+      "basis": "25/50/75/100 MW at months 42/51/60/69 after gates.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "summer",
+      "label": "Outdoor summer check",
+      "value": 35,
+      "unit": "degrees C",
+      "basis": "Assumed primary thermal sizing point; check capacity at 40 C stress. Not an ASHRAE/NBC site statistic.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": [
+        "AB12"
+      ]
+    },
+    {
+      "id": "winter",
+      "label": "Outdoor winter check",
+      "value": -40,
+      "unit": "degrees C",
+      "basis": "Assumed cold-start/freeze-protection envelope; structural/frost criteria by local engineer.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": [
+        "AB12"
+      ]
+    },
+    {
+      "id": "water",
+      "label": "Routine cooling evaporation",
+      "value": 0,
+      "unit": "m3/year design intent",
+      "basis": "Dry heat rejection for campus and engines; fill, maintenance, domestic and fire water remain positive.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "waterdaily",
+      "label": "Domestic/service water planning",
+      "value": 50,
+      "unit": "m3/day",
+      "basis": "Upper screening allowance for staff, cleaning and service, excludes first fill/fire event; obtain municipal supply terms.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": []
+    },
+    {
+      "id": "co2",
+      "label": "Indicative direct combustion intensity",
+      "value": 0.38,
+      "unit": "tonnes CO2/MWh",
+      "basis": "7.6 GJ/MWh x assumed 50 kg CO2/GJ; excludes upstream emissions and methane slip; not a compliance inventory.",
+      "status": "Concept estimate; unverified commercially",
+      "sourceIds": [
+        "AB10"
+      ]
+    }
+  ],
+  "modelOverrides": {
+    "generationPhaseShares": [
+      0.4704861111111111,
+      0.15885416666666666,
+      0.21180555555555555,
+      0.15885416666666666
+    ],
+    "energyPriceMwh": 120,
+    "basePue": 1.2,
+    "peakPue": 1.25,
+    "liquidCapturePct": 90,
+    "facilityCapexPerKw": 13500,
+    "landCostM": 8,
+    "gridCostM": 75,
+    "powerPlantCostM": 360,
+    "softCostPct": 10,
+    "contingencyPct": 15,
+    "fixedOpexM": 35,
+    "variableOpexPerKwYear": 180,
+    "leaseRateKwMonth": 235,
+    "debtPct": 55,
+    "interestPct": 7.5,
+    "debtYears": 20,
+    "equityDiscountPct": 15,
+    "occupancyPct": 95,
+    "loadFactorPct": 80,
+    "firstOperationMonth": 42,
+    "phaseIntervalMonths": 9
+  },
+  "killCriteria": [
+    "No controllable, developable tract with a defensible consent path by month 6.",
+    "No written viable BYOG/grid and firm gas route by month 12; do not fund speculative halls while power remains indeterminate.",
+    "No bankable 25 MW anchor commitment by month 12 at terms that pass updated cost and downside underwriting.",
+    "Unmitigable noise/air, wetland, industrial-neighbour or emergency-response conflict.",
+    "No firm first-phase service path within 54 project months, unless a customer signs a revised economic case.",
+    "Updated price/cost/financing case fails the 15% equity screen or downside debt-service requirements; reduce/reshape scope only through a new investment decision.",
+    "Customer decarbonization or availability requirements cannot be reconciled with the actual power/fuel design."
+  ],
+  "nextActions": [
+    "1. Verify listing availability, title, zoning map and seller willingness to grant a conditional option; obtain boundary survey and access rights.",
+    "2. Prepare AESO/TFO pre-application package: 25/50/75/100 MW IT, 31.25/62.5/93.75/125 MW peak site, staged gas capacity and net-load behavior. Confirm current final BYOG rules.",
+    "3. Request firm-gas feasibility and two-carrier physical-route studies; cap paid feasibility expenditure before commitments.",
+    "4. Complete environmental/geotechnical/industrial-neighbour fatal-flaw screening and County written use classification.",
+    "5. Obtain competitive budgetary engine, transformer, cooling and EPC scopes with site derates, slots and termination exposure.",
+    "6. Validate rent and lease technical terms with creditworthy tenants; resolve carbon and computing-equipment levy allocation.",
+    "7. Replace allowances with quotations and conditions, rerun debt/return/downside case and take a documented G4 investment decision."
+  ]
+}

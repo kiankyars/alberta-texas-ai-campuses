@@ -1,0 +1,961 @@
+{
+  "id": "texas",
+  "name": "Temple AI Campus",
+  "subtitle": "100 MW IT \u2022 four 25 MW phases \u2022 Central Texas",
+  "region": "Texas, United States",
+  "currency": "USD",
+  "asOf": "2026-10-13",
+  "verdict": "Diligence only: approval hold and base returns below hurdle",
+  "thesis": "A water-conserving, liquid-cooled capacity campus in North Temple can be a credible development option only if land, a 140 MW power pathway, regulatory clearance and bankable tenant demand are proven.",
+  "executiveSummary": [
+    "Develop and lease powered/cooled capacity in four 25 MW IT phases. The base asset includes buildings, power distribution, emergency standby systems and cooling; customers supply compute and networking hardware.",
+    "Select the historically advertised 147-acre Moores Mill/Wendland industrial area for investigation. Its address and utility context are source-backed; current land availability, boundaries and 140 MW service capacity remain unverified.",
+    "Texas is currently a gated development opportunity: TCEQ explicitly includes data-center construction stormwater applications in the statewide hold. A new project has no demonstrated Batch Zero eligibility. Model operation at months 48/54/60/66 only after a future authorized start.",
+    "Use dry heat rejection with mechanical trim and 140 MW peak electrical demand. Base underwriting yields approximately 10.2% equity IRR against a 14% hurdle; improve evidenced rent/cost terms before FID. No tax incentive, energy-trading profit or on-site gas shortcut is assumed."
+  ],
+  "site": {
+    "name": "Moores Mill / Wendland study area",
+    "municipality": "Temple, Bell County",
+    "addressOrArea": "Southwest corner of Moores Mill Road and Wendland Road, North Temple, Texas; historical 147-acre EDC announcement",
+    "lat": 31.1555256,
+    "lon": -97.340889,
+    "coordinateBasis": "OSM road reference on Moores Mill Road, not a tract centroid, exact intersection or boundary. Official EDC source supplies the candidate area address; a title/survey gate must locate the actual parcel.",
+    "landStatus": "Historical 2020 EDC site announcement only. Current owner, availability, land control, parcel ID and usable area are NOT verified.",
+    "areaHa": 59.5,
+    "rationale": "Investigate a documented industrial area with road and municipal utility context on the Central Texas corridor. Selection is provisional and can be displaced by a competing site with a proven earlier power date.",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Moores+Mill+Road+and+Wendland+Road+Temple+Texas",
+    "constraints": [
+      "No title, option, survey, environmental assessment or current availability evidence.",
+      "Industrial promotion does not establish data-center zoning or a feasible campus fit.",
+      "Floodplain, drainage, wetlands, geotechnical conditions, airport/FAA height constraints, easements and neighboring receptors need parcel-level screening.",
+      "Two carrier-diverse entrances and route diversity must be demonstrated; area internet service proves neither.",
+      "Utility nomination is provisional: Oncor serves much of the area, but parcel-specific DSP/TSP must confirm jurisdiction."
+    ],
+    "alternatives": [
+      {
+        "name": "Five Points Business Park, Abilene",
+        "reason": "DCOA identifies over 500 acres of industrial sites and an on-site 50 MW substation. Its stated capacity is below the 140 MW campus peak and says nothing about spare headroom.",
+        "decision": "Reserve candidate; proceed only if a TSP study and actual lot assembly show an earlier viable connection. The same state approval hold applies."
+      },
+      {
+        "name": "Texas Central Park, Waco",
+        "reason": "The City identifies a large established industrial park at I-35/SH6/US84 with advertised development land. No site-specific 140 MW connection evidence found.",
+        "decision": "Reserve candidate with a parallel owner/utility desktop screen. Temple wins only provisionally on a documented 147-acre investigation area, not a proven power advantage."
+      }
+    ],
+    "sourceIds": [
+      "TX01",
+      "TX02",
+      "TX03",
+      "TX12",
+      "TX13",
+      "TX16"
+    ]
+  },
+  "power": {
+    "strategy": "Grid-supplied campus with non-exporting emergency standby and UPS; reserve and disclose the full 140 MW peak campus requirement at the outset.",
+    "gridVoltageKv": 138,
+    "gridRoute": "Confirm DSP/TSP, service territory and viable POI; seek post-hold intake direction; execute intermediate agreement and studies, post required security, prove load dynamics and ride-through, conclude SLLIA and utility works, then obtain explicit staged energization permission. 138 kV is a design placeholder, not an offered voltage.",
+    "generationRoute": "Emergency generators only in base CAPEX; no prime-power gas plant. A gas alternative would need fuel pressure/capacity, air permit, acoustic study, heat rejection and a separate finance case. Off-grid or behind-the-meter generation is not presumed exempt from the data-center permit hold.",
+    "utility": "Oncor is the provisional area utility; exact interconnecting DSP/TSP unconfirmed. Retail supply requires a separate qualified supplier agreement.",
+    "constraints": [
+      "No capacity allocated, interconnection application filed, SLLIA signed or energization date offered.",
+      "75 MW large-load threshold uses aggregate site demand; dividing the campus into 25 MW phases does not avoid review.",
+      "Batch Zero July 2026 filing dates have passed. No historic eligibility is claimed.",
+      "140 MW study request implies USD7m intermediate security plus USD0.1m study fee under adopted rule; later security may be higher.",
+      "Power-quality and dynamic models must capture UPS, chiller motor starts, IT step loads, curtailment, restoration and fault ride-through.",
+      "Do not monetize emergency generators as routine dispatch or assume their air permits allow economic load-following."
+    ],
+    "sourceIds": [
+      "TX03",
+      "TX04",
+      "TX05",
+      "TX06",
+      "TX07",
+      "TX15"
+    ]
+  },
+  "cooling": {
+    "strategy": "Direct-to-chip liquid cooling with isolated facility/CDU loops, dry coolers and air-cooled mechanical trim sized for peak conditions. Separate residual room-air cooling; N+1 modular equipment and sectional isolation target maintainability.",
+    "climateImplications": "Central Texas heat means free cooling cannot carry the year. Annual PUE target 1.28, peak facility design PUE 1.40; verify 43 C design and 46 C stress condition against vendor curves, local hourly data, cold snaps and hail/wind loads.",
+    "waterStrategy": "Avoid evaporative towers in the base design. Assume 15 m3/day domestic/service demand plus initial closed-loop fill and fire reserve; closed-loop circulation is not consumptive water withdrawal. Meter mains, makeup and discharge separately, obtain City capacity and drought conditions, and plan TWDB reporting. No water rights or well permit assumed.",
+    "sourceIds": [
+      "TX08",
+      "TX09"
+    ]
+  },
+  "permits": [
+    {
+      "name": "State audit and permit reopening",
+      "authority": "Governor / ERCOT / TCEQ / PUCT",
+      "requirement": "Written confirmation the project may advance under current directives; this gates state applications and construction authorization.",
+      "sequence": "Before modeled M0",
+      "assumedMonths": 0,
+      "status": "External hold; duration unknown and excluded from modeled clock",
+      "sourceIds": [
+        "TX05",
+        "TX06"
+      ]
+    },
+    {
+      "name": "Land use, plat and building approvals",
+      "authority": "City of Temple / relevant county and fire authority",
+      "requirement": "Verify actual parcel jurisdiction, permitted use, site plan, drainage, access, fire strategy, building/MEP permits and occupancy certificates. Conditional-use or zoning process if required.",
+      "sequence": "M0-18 design and permissions; occupancy by phase",
+      "assumedMonths": 18,
+      "status": "Not applied; local use and codes unconfirmed",
+      "sourceIds": [
+        "TX11"
+      ]
+    },
+    {
+      "name": "Large-load study and connection",
+      "authority": "Interconnecting DSP/TSP, ERCOT and PUCT",
+      "requirement": "Full-campus demand disclosure, evidence of site control, commercial/technical information, intermediate and final agreements, studies, security and explicit energization clearance.",
+      "sequence": "M0-18 studies/agreements; utility and substation works through M46; M46-48 phase-1 authorization and acceptance",
+      "assumedMonths": 48,
+      "status": "Not applied; post-hold process and available capacity unknown",
+      "sourceIds": [
+        "TX04",
+        "TX07"
+      ]
+    },
+    {
+      "name": "Air authorization for standby fleet",
+      "authority": "TCEQ; federal engine standards applicability reviewed by air counsel",
+      "requirement": "Inventory all engines, tanks and testing/operating scenarios; determine NSR/PBR/Title V applicability with emissions and dispersion analysis. Obtain necessary authorization before regulated construction.",
+      "sequence": "M2-18 after restart; permit before installation",
+      "assumedMonths": 16,
+      "status": "Not applied; applicability and hold unresolved",
+      "sourceIds": [
+        "TX05",
+        "TX10"
+      ]
+    },
+    {
+      "name": "Construction stormwater / SWP3",
+      "authority": "TCEQ",
+      "requirement": "Whole-campus common-plan disturbance, SWP3 and required TXR150000 coverage before earthworks; verify current permit version at actual start.",
+      "sequence": "M8-18 after restart and before earthworks",
+      "assumedMonths": 10,
+      "status": "Current data-center applications halted",
+      "sourceIds": [
+        "TX06"
+      ]
+    },
+    {
+      "name": "Water, wastewater and fire service",
+      "authority": "City of Temple; TWDB for reporting",
+      "requirement": "Capacity and drought-service letters, industrial discharge determination, metering, fire-flow/storage agreement and operational reporting.",
+      "sequence": "M1-12 agreements; actual commissioning verification before M48",
+      "assumedMonths": 12,
+      "status": "No capacity reserved",
+      "sourceIds": [
+        "TX03",
+        "TX08"
+      ]
+    },
+    {
+      "name": "Environmental / drainage / transport constraints",
+      "authority": "Applicable federal, state and local agencies after survey",
+      "requirement": "Phase I ESA, geotechnical and flood/wetland screening, drainage study, utility easements, road permits and FAA review if heights/location trigger it. Route any triggered approvals after screening.",
+      "sequence": "M0-8 screen; resolve before FID",
+      "assumedMonths": 8,
+      "status": "Applicability unconfirmed; desktop placeholder, not legal clearance",
+      "sourceIds": [
+        "TX01",
+        "TX11"
+      ]
+    }
+  ],
+  "delivery": [
+    {
+      "name": "Regulatory clearance and new M0 authority",
+      "startMonth": 0,
+      "endMonth": 0,
+      "dependency": "Written restart permission and sponsor authorization",
+      "output": "Clock starts; unknown preceding hold is not forecast",
+      "status": "Blocked by external confirmation"
+    },
+    {
+      "name": "Land, survey and constraints",
+      "startMonth": 0,
+      "endMonth": 6,
+      "dependency": "Access permission and seller cooperation",
+      "output": "Option/title/survey/ESA/geotechnical and legal-use decision",
+      "status": "Planned"
+    },
+    {
+      "name": "Grid intake, dynamic models and batch/studies",
+      "startMonth": 0,
+      "endMonth": 18,
+      "dependency": "Available post-hold intake; site and financial evidence",
+      "output": "Allocated pathway, cost and staged connection terms",
+      "status": "Conditional; no queue position"
+    },
+    {
+      "name": "Customer requirements and anchor contracting",
+      "startMonth": 2,
+      "endMonth": 18,
+      "dependency": "Site/power diligence and product specification",
+      "output": "Credit-supported 50 MW anchor and phase options",
+      "status": "Planned; no interest verified"
+    },
+    {
+      "name": "Design, water, air and land-use approvals",
+      "startMonth": 2,
+      "endMonth": 18,
+      "dependency": "Survey, utility studies and regulator acceptance",
+      "output": "30% design then permit-ready issued design",
+      "status": "Planned"
+    },
+    {
+      "name": "HV tender and technical freeze",
+      "startMonth": 3,
+      "endMonth": 12,
+      "dependency": "Preliminary TSP interface, fault duty, site access and supplier quotations",
+      "output": "Reviewed RFQ, bankable manufacturing slot, interfaces and sponsor-approved cancellation exposure",
+      "status": "Planned; no supplier slot"
+    },
+    {
+      "name": "HV equipment release and manufacture",
+      "startMonth": 12,
+      "endMonth": 42,
+      "dependency": "Separate sponsor approval for pre-FID order; utility design sufficiently mature; permit conditions and cancel/change exposure accepted",
+      "output": "30-month order-to-site window including factory witness tests, freight and all 4 primary transformers delivered by M42",
+      "status": "Conditional; no order or quote"
+    },
+    {
+      "name": "HV install and site acceptance",
+      "startMonth": 42,
+      "endMonth": 46,
+      "dependency": "Foundations and cable routes ready, compliant delivery, utility works and authorized installation",
+      "output": "Installed primary equipment, SAT, calibrated metering, relay and telemetry evidence",
+      "status": "Conditional"
+    },
+    {
+      "name": "Phase 1 integrated commissioning and handover",
+      "startMonth": 46,
+      "endMonth": 48,
+      "dependency": "Utility/ERCOT energization approval, complete cooling/UPS/standby and tenant acceptance criteria",
+      "output": "Witnessed capacity/thermal/failure tests and signed 25 MW acceptance",
+      "status": "Conditional; no approved test plan"
+    },
+    {
+      "name": "FID and construction debt close",
+      "startMonth": 18,
+      "endMonth": 18,
+      "dependency": "Permits, power contract, prelease, EPC scope and downside model",
+      "output": "Authorized notice to proceed and funded contingency",
+      "status": "Unmet"
+    },
+    {
+      "name": "Enabling works and campus utilities",
+      "startMonth": 18,
+      "endMonth": 28,
+      "dependency": "FID and construction stormwater coverage",
+      "output": "Graded pads, drainage, roads, fiber ducts and backbone",
+      "status": "Planned"
+    },
+    {
+      "name": "Phase 1 build, energize and commission",
+      "startMonth": 24,
+      "endMonth": 48,
+      "dependency": "Equipment, utility completion and explicit energization permission",
+      "output": "25 MW IT accepted at M48 after factory delivery, site testing and explicit energization permission",
+      "status": "Conditional date"
+    },
+    {
+      "name": "Phase 2 delivery",
+      "startMonth": 30,
+      "endMonth": 54,
+      "dependency": "Lease and reserved capacity ramp",
+      "output": "50 MW cumulative IT accepted at M54",
+      "status": "Conditional date"
+    },
+    {
+      "name": "Phase 3 delivery",
+      "startMonth": 36,
+      "endMonth": 60,
+      "dependency": "Lease and reserved capacity ramp",
+      "output": "75 MW cumulative IT accepted at M60",
+      "status": "Conditional date"
+    },
+    {
+      "name": "Phase 4 delivery",
+      "startMonth": 42,
+      "endMonth": 66,
+      "dependency": "Lease and reserved capacity ramp",
+      "output": "100 MW cumulative IT accepted at M66",
+      "status": "Conditional date"
+    },
+    {
+      "name": "Operations, warranty and compliance",
+      "startMonth": 48,
+      "endMonth": 78,
+      "dependency": "Phase handover and trained operations staff",
+      "output": "SLA reporting, water/emissions records and maintenance program",
+      "status": "Planned"
+    }
+  ],
+  "procurement": [
+    {
+      "package": "HV substation and transformers",
+      "specification": "138 kV concept; MV campus distribution; N+1 capacity to meet 140 MW peak after one unit loss, subject to TSP fault-level and protection study",
+      "quantity": "4 x 50 MVA primary transformers (3 duty + 1 spare) and 20 x 10 MVA block transformers; concept quantities",
+      "leadMonths": 30,
+      "status": "RFQ M3-9; technical freeze/release M12; 30-month order-to-site delivery M42; SAT M42-46; integrated acceptance M46-48. All dates estimates and pre-FID order separately gated.",
+      "sourceIds": []
+    },
+    {
+      "package": "MV/LV switchgear and protection",
+      "specification": "Sectional buses, maintenance isolation, synchronized protection and arc-flash study",
+      "quantity": "Four 25 MW IT block packages",
+      "leadMonths": 24,
+      "status": "Concept allowance; no RFQ response, reservation or purchase order",
+      "sourceIds": []
+    },
+    {
+      "package": "UPS and emergency standby",
+      "specification": "Ride-through and loss-of-mains transition validated with cooling auxiliaries; emergency-only emissions envelope",
+      "quantity": "24 x 5 MW UPS modules and 32 x 5 MW net standby units across four blocks; concept quantities",
+      "leadMonths": 22,
+      "status": "Concept allowance; no RFQ response, reservation or purchase order",
+      "sourceIds": []
+    },
+    {
+      "package": "Liquid cooling / dry heat rejection",
+      "specification": "CDUs, redundant pumps, dry coolers and air-cooled trim chillers rated at project extreme weather and customer water temperature",
+      "quantity": "40 x 2.5 MW CDUs and 32 x 5 MW heat-rejection modules; net site-rated concept quantities",
+      "leadMonths": 18,
+      "status": "Concept allowance; no RFQ response, reservation or purchase order",
+      "sourceIds": []
+    },
+    {
+      "package": "Building shell and civil",
+      "specification": "Modular hall envelope; tested flood levels, wind/hail loads, service roads, detention and access",
+      "quantity": "Four halls plus central utility / operations scope",
+      "leadMonths": 16,
+      "status": "Concept allowance; no RFQ response, reservation or purchase order",
+      "sourceIds": []
+    },
+    {
+      "package": "Fiber and carrier entry",
+      "specification": "Two independently traced off-site routes and separate building entries; restoration service commitments",
+      "quantity": "Two carrier agreements plus internal ring",
+      "leadMonths": 12,
+      "status": "Concept allowance; no RFQ response, reservation or purchase order",
+      "sourceIds": []
+    },
+    {
+      "package": "Controls, commissioning and security",
+      "specification": "BMS/EPMS, cyber-segmented OT, calibrated meters, integrated systems/load-bank tests and failure-mode scripts",
+      "quantity": "One campus platform; four phased acceptance campaigns",
+      "leadMonths": 12,
+      "status": "Concept allowance; no RFQ response, reservation or purchase order",
+      "sourceIds": []
+    }
+  ],
+  "commercial": {
+    "customer": "One creditworthy hyperscaler or AI-infrastructure operator as 50 MW anchor, plus a second 25-50 MW customer if commercially justified; no customer has been contacted or secured.",
+    "offering": "15-year wholesale committed-capacity leases, four 25 MW IT modules, customer-owned servers/network, documented liquid-interface and density envelope, separate metered electricity pass-through.",
+    "contracting": "Secure binding take-or-pay capacity and ramp milestones with parent guarantee or bank security before FID. Specify rent start only after acceptance, utility-availability conditions, cancellation/extension rights, power-price allocation, liquid temperatures, permissible curtailment, SLA exclusions/remedies and change-order boundaries. Initial term is 15 years per accepted phase. Model revenue thereafter is an explicit uncontracted renewal assumption; do not describe it as take-or-pay coverage.",
+    "financing": "Illustrative 60% debt, 8% rate, 15-year amortization; 14% nominal equity hurdle. Use construction-to-term debt only after legal restart, power agreement, permits, guaranteed maximum price scope and creditworthy prelease. Hold USD7m utility security separately; final requirement may be larger. No incentive or refinance proceeds assumed.",
+    "goToMarket": [
+      "Create a confidential tenant brief with independently verified power pathway, parcel and heat-removal envelope.",
+      "Screen anchor credit and workload: training/inference mix, uninterrupted service expectation, liquid supply temperature, rack density, curtailment tolerance and ramp certainty.",
+      "Obtain competing capacity-rent proposals using identical electricity pass-through and fit-out boundary.",
+      "Execute milestone-linked 50 MW anchor lease and option remaining phases; build later blocks only against contracted demand."
+    ],
+    "counterpartyQuestions": [
+      "Will a tenant guarantee 50 MW at a specified rent and cooling interface before lender commitments?",
+      "Can the utility offer 140 MW peak campus service with a binding cost/ramp and acceptable curtailment terms?",
+      "Will the landowner grant a diligence option conditioned on planning, power and financing?",
+      "Will two carriers certify separate physical paths and entry points, rather than reselling the same route?",
+      "What deposits, cancellation exposure and thermal derates will OEMs actually contract?"
+    ]
+  },
+  "risks": [
+    {
+      "risk": "State permit hold / intake uncertainty",
+      "impact": "Indeterminate pre-M0 delay and stranded option spend",
+      "mitigation": "Limit current work to lawful diligence; require written restart and project-specific intake advice",
+      "trigger": "No clearance at next sponsor gate",
+      "owner": "Development director",
+      "sourceIds": [
+        "TX05",
+        "TX06"
+      ]
+    },
+    {
+      "risk": "Unallocated grid capacity and upgrade costs",
+      "impact": "Connection delay, larger collateral and uneconomic tenant rent",
+      "mitigation": "Full-campus request, dynamic study and explicit cost/ramp contract before FID",
+      "trigger": "140 MW unavailable or costs fail downside case",
+      "owner": "Power lead",
+      "sourceIds": [
+        "TX04",
+        "TX07",
+        "TX15"
+      ]
+    },
+    {
+      "risk": "Historic site no longer available",
+      "impact": "Chosen layout cannot be executed",
+      "mitigation": "Verify parcel, owner, survey and conditions before any exclusivity premium",
+      "trigger": "Land control cannot be obtained at viable terms",
+      "owner": "Real estate counsel",
+      "sourceIds": [
+        "TX01",
+        "TX02"
+      ]
+    },
+    {
+      "risk": "Heat, water and community acceptance",
+      "impact": "Cooling derating, water restrictions or permission failure",
+      "mitigation": "Dry/trim design, hourly simulation, acoustic setback study and transparent demand budget",
+      "trigger": "Peak IT cannot be supported at dry design condition",
+      "owner": "MEP lead",
+      "sourceIds": [
+        "TX08",
+        "TX09"
+      ]
+    },
+    {
+      "risk": "Anchor credit or ramp shortfall",
+      "impact": "Unleased facilities and debt covenant breach",
+      "mitigation": "Credit support, phased FID and binding committed-capacity terms",
+      "trigger": "No 50 MW anchor or DSCR below 1.30 in agreed downside",
+      "owner": "Commercial/CFO",
+      "sourceIds": []
+    },
+    {
+      "risk": "Equipment delivery and performance",
+      "impact": "Late rent start and expensive temporary systems",
+      "mitigation": "Dual-source RFQs, witnessed tests, cancellation exposure caps and integrated acceptance",
+      "trigger": "Long-lead slot misses utility-ready path",
+      "owner": "EPC director",
+      "sourceIds": []
+    },
+    {
+      "risk": "Air / backup operating restrictions",
+      "impact": "Emergency resilience cannot meet lease promises",
+      "mitigation": "Model all engines together, obtain approved run-hour/emission strategy and avoid economic dispatch assumptions",
+      "trigger": "Proposed generator operating mode cannot be authorized",
+      "owner": "Environmental lead",
+      "sourceIds": [
+        "TX10"
+      ]
+    },
+    {
+      "risk": "Single physical fiber route or common utility failure",
+      "impact": "Campus-wide outage despite nominal redundant suppliers",
+      "mitigation": "Route audits, maintainable distribution, failure-mode analysis and customer-tested recovery",
+      "trigger": "Independent routes or accepted failure recovery absent",
+      "owner": "Network/commissioning lead",
+      "sourceIds": [
+        "TX03"
+      ]
+    },
+    {
+      "risk": "Tax and operating-cost error",
+      "impact": "Overstated cash flow or inadequate financing",
+      "mitigation": "No incentive assumed; independent property appraisal, tax diligence and insurance quotes",
+      "trigger": "All-in required rent exceeds validated customer appetite",
+      "owner": "CFO",
+      "sourceIds": [
+        "TX14"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "name": "G0 \u00b7 lawful restart",
+      "proof": "Written current regulatory route and sponsor authorization; time before this gate is unknown",
+      "owner": "Regulatory counsel",
+      "status": "Unmet \u2014 external evidence required"
+    },
+    {
+      "name": "G1 \u00b7 real site control",
+      "proof": "Executed conditional option, title/survey, current availability and no fatal planning/environmental constraints",
+      "owner": "Development lead",
+      "status": "Unmet \u2014 external evidence required"
+    },
+    {
+      "name": "G2 \u00b7 power and water",
+      "proof": "Binding studied connection scope/ramp, required financial security, water/fire service and route easements",
+      "owner": "Power / civil lead",
+      "status": "Unmet \u2014 external evidence required"
+    },
+    {
+      "name": "G3 \u00b7 bankable demand",
+      "proof": "Executed 50 MW minimum anchor capacity lease with adequate credit support and agreed thermal/SLA envelope",
+      "owner": "Commercial lead",
+      "status": "Unmet \u2014 external evidence required"
+    },
+    {
+      "name": "G4 \u00b7 investment decision",
+      "proof": "Permit-ready design, approved permits, EPC/OEM scope and schedule, finance documents, downside DSCR >=1.30 and hurdle approval",
+      "owner": "Investment committee",
+      "status": "Unmet \u2014 external evidence required"
+    },
+    {
+      "name": "G5 \u00b7 phased energization",
+      "proof": "Written utility/ERCOT approval and completed protection/metering/telemetry tests for each stage",
+      "owner": "Electrical commissioning lead",
+      "status": "Unmet \u2014 external evidence required"
+    },
+    {
+      "name": "G6 \u00b7 tenant handover",
+      "proof": "Integrated failure tests, thermal full-load acceptance, diverse fiber evidence and signed tenant acceptance",
+      "owner": "Independent commissioning authority",
+      "status": "Unmet \u2014 external evidence required"
+    }
+  ],
+  "sources": [
+    {
+      "id": "TX01",
+      "title": "147-acre North Temple industrial site announcement",
+      "url": "https://templeedc.com/temple-unveils-new-shovel-ready-site-in-industrial-park/",
+      "publisher": "Temple Economic Development Corporation",
+      "published": "2020-11-16",
+      "accessed": "2026-10-13",
+      "claim": "Identifies a 147-acre site at the southwest corner of Moores Mill and Wendland roads, with roads, water, sewer and rail access.",
+      "limitation": "Historical land announcement; present availability, ownership, utility capacity and developable acreage not verified."
+    },
+    {
+      "id": "TX02",
+      "title": "Temple site selection",
+      "url": "https://templeedc.com/tools-resources/site-selection/",
+      "publisher": "Temple Economic Development Corporation",
+      "published": "Undated; accessed 2026-10-13",
+      "accessed": "2026-10-13",
+      "claim": "City-level industrial property search and advertised land inventory.",
+      "limitation": "Promotional inventory does not prove the selected tract is still available."
+    },
+    {
+      "id": "TX03",
+      "title": "Temple infrastructure",
+      "url": "https://templeedc.com/doing-business-here/infrastructure/",
+      "publisher": "Temple Economic Development Corporation",
+      "published": "Undated; accessed 2026-10-13",
+      "accessed": "2026-10-13",
+      "claim": "Identifies Oncor as the principal area electricity provider and the City as municipal water/wastewater provider.",
+      "limitation": "Exact parcel service territory, fiber routes, utility capacity and prices require written verification; telecom list contains legacy names."
+    },
+    {
+      "id": "TX04",
+      "title": "Large Load Integration",
+      "url": "https://www.ercot.com/services/rq/large-load-integration/",
+      "publisher": "ERCOT",
+      "published": "Live guidance; accessed 2026-10-13",
+      "accessed": "2026-10-13",
+      "claim": "Large-load integration documents, Batch Zero eligibility, July 2026 submission dates, verification and energization forms.",
+      "limitation": "This new concept has no Batch Zero status or allocated MW; future intake timing is unresolved."
+    },
+    {
+      "id": "TX05",
+      "title": "Governor directs TCEQ permit halt",
+      "url": "https://gov.texas.gov/news/post/governor-abbott-directs-tceq-to-halt-data-center-permits",
+      "publisher": "Office of the Texas Governor",
+      "published": "2026-09-21",
+      "accessed": "2026-10-13",
+      "claim": "Directs TCEQ to halt permits sought by data centers pending ERCOT audit and refers to water reporting and community safeguards.",
+      "limitation": "No reopening date is established. The October 19 compliance update is not a reopening commitment."
+    },
+    {
+      "id": "TX06",
+      "title": "Construction stormwater permit and data-center halt notice",
+      "url": "https://www.tceq.texas.gov/permitting/stormwater/construction/",
+      "publisher": "Texas Commission on Environmental Quality",
+      "published": "Last modified 2026-10-07",
+      "accessed": "2026-10-13",
+      "claim": "Live notice explicitly includes construction general-permit applications associated with data centers in the halt; identifies construction stormwater/SWP3 requirements.",
+      "limitation": "No project-specific applicability determination or authorization exists."
+    },
+    {
+      "id": "TX07",
+      "title": "Adopted large-load interconnection standard, 16 TAC 25.194",
+      "url": "https://www.sos.state.tx.us/texreg/pdf/backview/1002/1002is.pdf",
+      "publisher": "Texas Secretary of State / Public Utility Commission of Texas",
+      "published": "2026-10-02; effective 2026-10-08",
+      "accessed": "2026-10-13",
+      "claim": "Adopted text at printed pages 6931-6940 covers 75 MW+ loads; $100,000 study fee, $50,000/MW intermediate security, and final security at least the greater of that basis or allocated upgrade costs.",
+      "limitation": "Counsel must apply full rule, tariff, disclosures, milestones and credit/forfeiture provisions. Securities are not a construction-price quotation."
+    },
+    {
+      "id": "TX08",
+      "title": "Digital Infrastructure Water Use Survey",
+      "url": "https://www.twdb.texas.gov/waterplanning/waterusesurvey/digitalinfrastructure.asp",
+      "publisher": "Texas Water Development Board",
+      "published": "2026 survey guidance",
+      "accessed": "2026-10-13",
+      "claim": "Operating digital-infrastructure recipients must report prior-year water use; non-operating projects should contact the survey team about status.",
+      "limitation": "Reporting is distinct from obtaining water service or water rights."
+    },
+    {
+      "id": "TX09",
+      "title": "Waco climate normals and extremes",
+      "url": "https://www.weather.gov/fwd/act_normals",
+      "publisher": "National Weather Service, Fort Worth",
+      "published": "1991-2020 normals; live table",
+      "accessed": "2026-10-13",
+      "claim": "Regional proxy records hot summers, roughly 24 days/year at or above 100 F and freezing weather.",
+      "limitation": "Waco is a regional proxy, not a Temple equipment-design weather file; extreme/design hours need a site engineer."
+    },
+    {
+      "id": "TX10",
+      "title": "Air permitting requirements and routes",
+      "url": "https://www.tceq.texas.gov/permitting/air/air_permits.html",
+      "publisher": "Texas Commission on Environmental Quality",
+      "published": "Last modified 2026-08-28",
+      "accessed": "2026-10-13",
+      "claim": "Air NSR, permit-by-rule, Title V, public notice and modeling routes require assessment for emission sources.",
+      "limitation": "Does not establish eligibility of this generator fleet for any streamlined permit."
+    },
+    {
+      "id": "TX11",
+      "title": "Temple Building Permits and Inspections",
+      "url": "https://www.templetx.gov/departments/city_departments/building_permits___inspections/index.php",
+      "publisher": "City of Temple",
+      "published": "Undated; accessed 2026-10-13",
+      "accessed": "2026-10-13",
+      "claim": "Official municipal building-permit department endpoint.",
+      "limitation": "Initial page resolved; later fetch returned 403. Specific zoning, code edition, use determination and review times are unverified."
+    },
+    {
+      "id": "TX12",
+      "title": "Five Points Business Park",
+      "url": "https://developabilene.com/five-points-business-park/",
+      "publisher": "Development Corporation of Abilene",
+      "published": "Undated; accessed 2026-10-13",
+      "accessed": "2026-10-13",
+      "claim": "Advertises over 500 acres of sites and an on-site 50 MW substation with utility infrastructure.",
+      "limitation": "50 MW nameplate is not spare capacity and is below this campus peak demand; no parcel or capacity reserved."
+    },
+    {
+      "id": "TX13",
+      "title": "Waco industrial site selection",
+      "url": "https://www.waco-texas.com/Departments/Economic-Development/Site-Selection",
+      "publisher": "City of Waco",
+      "published": "Undated; accessed 2026-10-13",
+      "accessed": "2026-10-13",
+      "claim": "Lists Texas Central Park and its advertised industrial land and transport connections.",
+      "limitation": "No specific parcel or 140 MW electricity allocation is established."
+    },
+    {
+      "id": "TX14",
+      "title": "Texas data center tax exemptions",
+      "url": "https://comptroller.texas.gov/taxes/data-centers/",
+      "publisher": "Texas Comptroller of Public Accounts",
+      "published": "Live guidance; accessed 2026-10-13",
+      "accessed": "2026-10-13",
+      "claim": "Describes qualification, application and certification for state sales-tax relief; local treatment and project eligibility require assessment.",
+      "limitation": "No incentive is assumed; political proposals are not enacted law or an award."
+    },
+    {
+      "id": "TX15",
+      "title": "Oncor first-quarter 2026 results",
+      "url": "https://www.oncor.com/content/oncorwww/wire/en/home/newsroom/oncor-reports-first-quarter-2026-results.html",
+      "publisher": "Oncor",
+      "published": "2026-05-07",
+      "accessed": "2026-10-13",
+      "claim": "Reports extensive LC&I queue and collateral associated with interconnection requests.",
+      "limitation": "Queue quantities are requests, not approved demand; no inference of availability at Temple."
+    },
+    {
+      "id": "TX16",
+      "title": "Moores Mill Road geographic reference",
+      "url": "https://www.openstreetmap.org/way/1548733235",
+      "publisher": "OpenStreetMap contributors / Nominatim",
+      "published": "Live geographic data; accessed 2026-10-13",
+      "accessed": "2026-10-13",
+      "claim": "Nominatim returned a Moores Mill Road reference point at 31.1555256, -97.3408890.",
+      "limitation": "Road reference only; not the selected tract centroid, a survey, parcel boundary or verified road intersection. Coordinates obtained using public Nominatim API."
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "TX-A01",
+      "label": "Campus IT capacity",
+      "value": 100,
+      "unit": "MW IT",
+      "basis": "Four independent 25 MW phases; owner design brief, excludes GPU procurement.",
+      "status": "Design assumption",
+      "sourceIds": []
+    },
+    {
+      "id": "TX-A02",
+      "label": "Gross study envelope",
+      "value": 59.5,
+      "unit": "ha",
+      "basis": "147 historic acres converts to 59.49 ha; use 59.5 ha only as an area envelope, not surveyed usable area.",
+      "status": "Historical / design assumption",
+      "sourceIds": [
+        "TX01"
+      ]
+    },
+    {
+      "id": "TX-A03",
+      "label": "Annual PUE",
+      "value": 1.28,
+      "unit": "ratio",
+      "basis": "Planning target for warm-climate, direct-liquid cooling with air-cooled heat rejection and mechanical trim; hourly weather simulation pending.",
+      "status": "Design assumption",
+      "sourceIds": [
+        "TX09"
+      ]
+    },
+    {
+      "id": "TX-A04",
+      "label": "Peak design PUE",
+      "value": 1.4,
+      "unit": "ratio",
+      "basis": "Peak facility capacity 140 MW at 100 MW IT; deliberately distinct from annual PUE. Hot-weather equipment derating and auxiliary motor starts still need studies.",
+      "status": "Design assumption",
+      "sourceIds": [
+        "TX09"
+      ]
+    },
+    {
+      "id": "TX-A05",
+      "label": "Delivered electricity",
+      "value": 80,
+      "unit": "USD/MWh",
+      "basis": "All-in planning allowance: energy 45 + delivery/demand equivalent 20 + supply shaping, losses, fees and tax allowance 15. This is not a current tariff or supplier quote. Test 55-125.",
+      "status": "Estimate",
+      "sourceIds": []
+    },
+    {
+      "id": "TX-A06",
+      "label": "Facility construction",
+      "value": 10000,
+      "unit": "USD/kW IT",
+      "basis": "Order-of-magnitude allowance: shell 1800 + electrical/UPS/standby 4000 + cooling 2200 + civil/drainage 1000 + controls/security/fiber 500 + testing/commissioning 500. Excludes separate land and off-plot utility connection; includes customer-owned HV substation; includes procurement taxes without assumed exemption. Test +/-30%.",
+      "status": "Estimate",
+      "sourceIds": []
+    },
+    {
+      "id": "TX-A07",
+      "label": "Land acquisition allowance",
+      "value": 12,
+      "unit": "USD million",
+      "basis": "147 acres at approximately USD81,600/acre as an underwriting placeholder, not an owner ask or appraisal.",
+      "status": "Estimate",
+      "sourceIds": [
+        "TX01"
+      ]
+    },
+    {
+      "id": "TX-A08",
+      "label": "HV connection and upgrades",
+      "value": 65,
+      "unit": "USD million",
+      "basis": "Off-plot utility connection and system-upgrade allowance. Customer-owned HV substation and downstream campus electrical are inside facility hard costs. The study result may materially exceed it.",
+      "status": "Estimate",
+      "sourceIds": [
+        "TX04",
+        "TX07"
+      ]
+    },
+    {
+      "id": "TX-A09",
+      "label": "Primary generation",
+      "value": 0,
+      "unit": "USD million",
+      "basis": "No primary gas plant in base case. Emergency standby plant included in facility electrical budget.",
+      "status": "Scope decision",
+      "sourceIds": []
+    },
+    {
+      "id": "TX-A10",
+      "label": "Soft costs",
+      "value": 10,
+      "unit": "%",
+      "basis": "Owner development, engineering, permitting, legal and delivery management allowance applied by model; does not include GPU/cloud costs.",
+      "status": "Estimate",
+      "sourceIds": []
+    },
+    {
+      "id": "TX-A11",
+      "label": "Construction contingency",
+      "value": 15,
+      "unit": "%",
+      "basis": "Concept allowance on model-defined construction cost base; uncertainty is broader than this reserve.",
+      "status": "Estimate",
+      "sourceIds": []
+    },
+    {
+      "id": "TX-A12",
+      "label": "Fixed operating costs",
+      "value": 30,
+      "unit": "USD million/year",
+      "basis": "Stabilized allowance: property tax 18 + insurance 4 + staff/security 6 + administration/compliance 2. No property-tax incentive assumed; appraisal and tax districts unconfirmed.",
+      "status": "Estimate",
+      "sourceIds": []
+    },
+    {
+      "id": "TX-A13",
+      "label": "Variable facility operating cost",
+      "value": 55,
+      "unit": "USD/kW/year",
+      "basis": "Occupied-capacity allowance for variable consumables and maintenance; fixed OPEX covers baseline maintenance exposure on unleased commissioned space; electricity pass-through excluded.",
+      "status": "Estimate",
+      "sourceIds": []
+    },
+    {
+      "id": "TX-A14",
+      "label": "Capacity lease",
+      "value": 195,
+      "unit": "USD/kW/month",
+      "basis": "Illustrative 15-year committed-capacity base rent, electricity passed through separately; no customer quote or signed lease. Test 150-250. Beyond each initial 15-year lease, the 20-year project model assumes uninterrupted reletting at unchanged rent and occupancy, no downtime or renewal CAPEX. This is an uncontracted tail of 60/54/48/42 months by phase, not secured revenue.",
+      "status": "Estimate",
+      "sourceIds": []
+    },
+    {
+      "id": "TX-A15",
+      "label": "Stabilized committed occupancy",
+      "value": 90,
+      "unit": "%",
+      "basis": "90 MW leased when fully built; owner exposure remains on unleased capacity. No prelease exists.",
+      "status": "Estimate",
+      "sourceIds": []
+    },
+    {
+      "id": "TX-A16",
+      "label": "Metered IT load factor",
+      "value": 85,
+      "unit": "%",
+      "basis": "Average draw as share of committed IT capacity; independent from occupancy.",
+      "status": "Estimate",
+      "sourceIds": []
+    },
+    {
+      "id": "TX-A17",
+      "label": "Construction/term debt",
+      "value": 60,
+      "unit": "% project capital",
+      "basis": "Illustrative leverage, 8% annual rate and 15-year amortization; subject to tenant credit, debt sizing and legal reopen.",
+      "status": "Estimate",
+      "sourceIds": []
+    },
+    {
+      "id": "TX-A18",
+      "label": "Equity discount rate",
+      "value": 14,
+      "unit": "% nominal",
+      "basis": "Sponsor screening hurdle; no investor commitment.",
+      "status": "Estimate",
+      "sourceIds": []
+    },
+    {
+      "id": "TX-A19",
+      "label": "First phase operation",
+      "value": 48,
+      "unit": "months after authorized restart",
+      "basis": "Conditional M48 COD: M12 HV order, 30-month manufacture/delivery to M42, installation/SAT M42-46, integrated acceptance M46-48. Clock starts only after regulatory release; all milestones require written supplier/utility evidence.",
+      "status": "Conditional estimate",
+      "sourceIds": [
+        "TX05",
+        "TX06"
+      ]
+    },
+    {
+      "id": "TX-A20",
+      "label": "Phase interval",
+      "value": 6,
+      "unit": "months",
+      "basis": "25 MW at model months 48/54/60/66 if capacity, demand and delivery gates pass.",
+      "status": "Conditional estimate",
+      "sourceIds": []
+    },
+    {
+      "id": "TX-A21",
+      "label": "Interconnection intermediate security floor",
+      "value": 7,
+      "unit": "USD million",
+      "basis": "140 MW requested peak x USD50,000/MW. Final security may exceed this; excludes USD0.1m study fee budgeted in soft costs. Return/credit/forfeiture depends on rule and agreement.",
+      "status": "Rule calculation / allocation pending",
+      "sourceIds": [
+        "TX07"
+      ]
+    },
+    {
+      "id": "TX-A22",
+      "label": "Operations domestic water planning demand",
+      "value": 15,
+      "unit": "m3/day",
+      "basis": "Sanitary, cleaning and limited makeup assumption, plus separately designed fire storage and initial closed-loop fill. No evaporative cooling in base case and no municipal capacity commitment.",
+      "status": "Design assumption",
+      "sourceIds": []
+    },
+    {
+      "id": "TX-A23",
+      "label": "Heat-rejection design ambient",
+      "value": 43,
+      "unit": "deg C dry bulb",
+      "basis": "Preliminary hot-weather screening condition, stress test 46 C; not a certified ASHRAE local design percentile.",
+      "status": "Design assumption",
+      "sourceIds": [
+        "TX09"
+      ]
+    },
+    {
+      "id": "TX-A24",
+      "label": "Liquid capture and water temperatures",
+      "value": 90,
+      "unit": "% IT heat captured",
+      "basis": "Shared engineering worksheet assumes 90% liquid capture at 35/45 C supply/return, with 10% room cooling; customer requirements can force colder water and greater trim-chiller demand.",
+      "status": "Design assumption",
+      "sourceIds": []
+    },
+    {
+      "id": "TX-A25",
+      "label": "Post-lease renewal revenue",
+      "value": "60 / 54 / 48 / 42",
+      "unit": "months beyond 15-year initial leases by phase",
+      "basis": "Project horizon is 20 years from first operation. Model assumes uninterrupted renewals/reletting at unchanged occupancy/rent after initial leases, with zero downtime or renewal investment; no contracts exist. Lender case must haircut/remove the tail.",
+      "status": "Uncontracted modelling assumption",
+      "sourceIds": []
+    }
+  ],
+  "modelOverrides": {
+    "energyPriceMwh": 80,
+    "basePue": 1.28,
+    "peakPue": 1.4,
+    "facilityCapexPerKw": 10000,
+    "landCostM": 12,
+    "gridCostM": 65,
+    "powerPlantCostM": 0,
+    "softCostPct": 10,
+    "contingencyPct": 15,
+    "fixedOpexM": 30,
+    "variableOpexPerKwYear": 55,
+    "leaseRateKwMonth": 195,
+    "debtPct": 60,
+    "interestPct": 8,
+    "debtYears": 15,
+    "equityDiscountPct": 14,
+    "occupancyPct": 90,
+    "loadFactorPct": 85,
+    "firstOperationMonth": 48,
+    "phaseIntervalMonths": 6,
+    "utilityCollateralM": 7
+  },
+  "killCriteria": [
+    "No lawful route to advance or no credible post-hold intake after a sponsor-defined six-month review: stop discretionary development spend and retain only low-cost options.",
+    "Landowner cannot establish an available contiguous parcel and at least the engineered usable footprint free of fatal easements/flood constraints: replace site.",
+    "Utility cannot establish an economically viable 140 MW peak pathway, or upgrade scope exceeds the underwriting case without tenant compensation: do not FID.",
+    "No creditworthy 50 MW anchor prelease, downside DSCR below 1.30, or stressed equity return below sponsor hurdle: resize capital commitment or stop.",
+    "Municipal water/fire service, non-evaporative thermal performance, air/noise compliance or genuinely diverse fiber cannot be proven: do not promise capacity."
+  ],
+  "nextActions": [
+    "Week 1: obtain regulatory counsel interpretation of the current state hold and permissible diligence; do not file or start works based on assumed exemptions.",
+    "Week 1: request EDC/current owner parcel IDs, updated availability, asking terms, survey, easements and option conditions; no offer or outreach has been sent.",
+    "Week 1-2: establish parcel-specific DSP/TSP and request a full 140 MW intake/POI discussion, with a 25/50/75/100 MW IT ramp and dynamic-load brief.",
+    "Week 2: commission scoped desktop environmental/flood/airport screening and municipal water/fire-flow and zoning determinations.",
+    "Week 2-4: request indicative electrical/cooling/OEM packages, independent carrier routes and anchor-tenant requirements; replace model assumptions with dated responses.",
+    "At the first gate: approve only a capped diligence budget; release equipment deposits, construction and finance commitments against independently verified gates.",
+    "Use texas-execution.md for unsent utility/landowner/OEM requests, phase acceptance criteria, O&M staffing assumptions and anchor lease terms; no template has been dispatched."
+  ]
+}
