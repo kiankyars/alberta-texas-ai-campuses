@@ -1,5 +1,7 @@
 # Alberta & Texas AI Campuses
 
+[Live site](https://kiankyars.github.io/alberta-texas-ai-campuses/) · [Repository](https://github.com/kiankyars/alberta-texas-ai-campuses) · [What would make the projects viable](docs/viability.md)
+
 Two independent, end-to-end concept / pre-feasibility proposals: Alberta and Texas. Each contains its own site case, grid/generation strategy, technical design, financial model, permitting, delivery, commercial structure, risks, sources and execution gates. Neither is a benchmark.
 
 ## Deliverables
@@ -16,6 +18,12 @@ Node 20+ and Python 3.11+ are required. No JavaScript dependencies are needed.
 4. `npm run dev` — http://127.0.0.1:4318.
 
 The site works as static files served over HTTP. Each project’s scenario is independent. Controls update the same audited model provided in the downloadable package. Inputs can be exported as JSON.
+
+## Hosting
+
+GitHub Pages is the canonical host. `.github/workflows/pages.yml` rebuilds the project data, reports and ZIP packages, runs verification, and publishes `dist/` on pushes to `main`. Pull requests run the same checks without publishing. All app and download URLs are relative, so the site works under the repository path.
+
+The deployment's `build-info.json` records its source commit and SHA-256 hashes of the served files. No ChatGPT account, hosting runtime, credentials or API service is required by the site.
 
 ## Boundary
 

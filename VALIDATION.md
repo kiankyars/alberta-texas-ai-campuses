@@ -16,9 +16,9 @@ This record verifies the concept artifacts and calculation behavior. External ap
 | Reports | Alberta 34 pages; Texas 29 pages, with PDF bookmarks and source hyperlinks | All pages rendered to contact sheets; engineering and dense tables inspected at readable resolution; no missing glyphs or non-finite values |
 | Serving | 17 Alberta and 16 Texas package files | Every local HTTP response matches its file bytes |
 
-`npm test`: **28 passed, 0 failed** (18 model, 6 project, 4 artifact tests). Browser console contained no warnings/errors at the inspected checkpoints. The production deployment is verified separately against the exact pushed source commit through Sites.
+`npm test`: **28 passed, 0 failed** (18 model, 6 project, 4 artifact tests). Browser console contained no warnings/errors at the inspected checkpoints. GitHub Pages publication is verified separately against the exact pushed source commit and its generated `build-info.json`. The workflow also verifies PDF content and ZIP member integrity.
 
-PDF SHA-256:
+Original reviewed PDF SHA-256 (regenerated PDFs may differ in creation metadata):
 
 - Alberta: `8277d029816004c7ad19485dbbee31e08d6dc15f1f263a2e4ff818e458e6ddaa`
 - Texas: `0e52685f94aaa51351f6d791301337df74cee18c1a78567914ffe4068d7dfc69`

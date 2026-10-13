@@ -2,3 +2,5 @@ node_modules/
 .tmp/
 artifacts/
 .DS_Store
+.venv/
+dist/build-info.json
